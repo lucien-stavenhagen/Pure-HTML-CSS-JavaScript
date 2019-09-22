@@ -2,6 +2,7 @@ import restHeader from "./header";
 import restMenuBar from "./menubar";
 import showPage from "./pages";
 import buildMenuListing from "./menu/menu";
+import restFooter from "./footer";
 
 restHeader("Acme Omelette House", "Best omelettes in the brazos valley", true);
 restMenuBar();
@@ -45,3 +46,4 @@ let dishes = [
   }
 ];
 buildMenuListing(dishes);
+restFooter();

@@ -86,6 +86,35 @@
 /************************************************************************/
 /******/ ({
 
+/***/ "./src/footer.js":
+/*!***********************!*\
+  !*** ./src/footer.js ***!
+  \***********************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+const restFooter = () => {
+  const display = document.getElementById("footer-content");
+  const t = document.getElementById("footer-temp");
+  const footerClone = document.importNode(t.content, true);
+  const logo = footerClone.getElementById("footer-logo");
+  const footerImage = document.createElement("img");
+  footerImage.src = "../assets/logo.jpg";
+  footerImage.style.height = "50px";
+  footerImage.style.width = "80px";
+  logo.appendChild(footerImage);
+  const footerText = footerClone.getElementById("rest-footer");
+  footerText.innerHTML = "&copy; 2019, DogBite Web Design";
+  display.appendChild(footerClone);
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (restFooter);
+
+
+/***/ }),
+
 /***/ "./src/header.js":
 /*!***********************!*\
   !*** ./src/header.js ***!
@@ -132,6 +161,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _menubar__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./menubar */ "./src/menubar.js");
 /* harmony import */ var _pages__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./pages */ "./src/pages.js");
 /* harmony import */ var _menu_menu__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./menu/menu */ "./src/menu/menu.js");
+/* harmony import */ var _footer__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./footer */ "./src/footer.js");
+
 
 
 
@@ -179,6 +210,7 @@ let dishes = [
   }
 ];
 Object(_menu_menu__WEBPACK_IMPORTED_MODULE_3__["default"])(dishes);
+Object(_footer__WEBPACK_IMPORTED_MODULE_4__["default"])();
 
 
 /***/ }),
