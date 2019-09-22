@@ -54,7 +54,7 @@ header {
 #about-text,
 #menu-text {
   width: 100%;
-  padding: 1.2rem;
+  padding: 1rem 2rem;
   border: var(--my-border);
   color: black;
   display: none;
@@ -68,7 +68,7 @@ header {
   display: block;
   margin: auto;
   border: var(--my-border);
-  border-radius: 2%;
+  border-radius: 5px;
   box-shadow: 0 7px 15px rgba(0, 0, 0, 0.4), 0 -7px 15px rgba(0, 0, 0, 0.4),
     7px 0 15px rgba(0, 0, 0, 0.4), -7px 0 15px rgba(0, 0, 0, 0.4);
 }
@@ -79,8 +79,10 @@ header {
 #text-content {
   width: var(--my-width);
   margin: auto;
+  padding: 1rem;
   display: grid;
   grid-template-columns: 1fr;
+  border: var(--my-border);
   background-color: rgba(255, 255, 255, 0.7);
 }
 footer {
@@ -98,6 +100,10 @@ footer h2 {
 @media (max-width: 768px) {
   :root {
     --my-width: 100%;
+  }
+  #text-content {
+    padding: 0;
+    border: none;
   }
   .menu-item {
     display: block;
