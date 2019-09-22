@@ -1,0 +1,79 @@
+:root {
+  --my-border: 1px solid rgba(0, 0, 0, 0.2);
+  --my-width: 90%;
+}
+* {
+  box-sizing: border-box;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+body {
+  background-image: url("../assets/20160418-american-omelet-ham-and-cheese-21.JPG");
+  background-attachment: fixed;
+}
+hr {
+  width: 20%;
+  margin: 1rem auto;
+}
+header {
+  text-align: center;
+  padding: 1rem;
+  border-bottom: 2px solid rgba(255, 0, 0, 0.4);
+}
+#rest-header {
+  font-size: 4rem;
+  color: white;
+  text-transform: uppercase;
+  text-shadow: 1px 0 black, -1px 0 black, 0 1px black, 0 -1px black;
+}
+#rest-header-two {
+  font-size: 3rem;
+  color: white;
+  text-transform: capitalize;
+  text-shadow: 1px 0 black, -1px 0 black, 0 1px black, 0 -1px black;
+}
+#menubar-list {
+  width: var(--my-width);
+  padding: 0;
+  margin: 0 auto;
+  list-style-type: none;
+}
+.menu-item {
+  display: inline-block;
+  padding: 1.2rem;
+  font-size: 1.1rem;
+  background-color: rgb(34, 112, 185);
+  color: white;
+  border: var(--my-border);
+}
+.menu-item:hover {
+  background-color: black;
+  cursor: pointer;
+}
+#home-text,
+#about-text,
+#menu-text {
+  width: 100%;
+  padding: 1.2rem;
+  border: var(--my-border);
+  background-color: rgba(255, 255, 255, 0.8);
+  color: black;
+  opacity: 0;
+  transition: opacity, 0.75s;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#text-content {
+  width: var(--my-width);
+  height: 600px;
+  margin: auto;
+  padding: 1rem;
+  position: relative;
+  overflow: auto;
+}
+@media (max-width: 768px) {
+  .menu-item {
+    display: block;
+  }
+}

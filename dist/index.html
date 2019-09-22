@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+        <link rel="stylesheet" href="../css/style.css">
+        <title>Restaurant Page</title>
+    </head>
+
+    <body>
+        <div id="header-content"></div>
+        <div id="menubar-content"></div>
+        <div id="text-content">
+            <div id="home-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla orci tellus, aliquam
+                vehicula risus vel, gravida viverra purus. Quisque at metus at enim fermentum imperdiet. Nunc eu ornare
+                eros. Proin elementum orci in tempus tincidunt. Cras felis dolor, dignissim eu turpis sit amet, ultrices
+                imperdiet massa. In in mi ultricies, posuere est id, vehicula lacus. Nam eget rutrum diam. Morbi
+                sollicitudin mollis gravida. Donec non consequat turpis, a efficitur ipsum. Nulla non tortor molestie,
+                malesuada lacus non, viverra tellus. In eu venenatis mauris. In neque massa, gravida et ante
+                scelerisque, blandit congue leo. </div>
+            <div id="about-text">Ut rhoncus sem et massa laoreet, eget finibus ipsum pharetra. In dapibus ornare
+                sagittis. Mauris lacus neque, placerat sed elit lobortis, vestibulum cursus justo. Curabitur egestas
+                lobortis justo, ut rhoncus enim. Mauris eget nulla non diam blandit ullamcorper. Aenean ultricies quis
+                mi eget interdum. Cras ullamcorper ac sapien quis fringilla. Suspendisse ac sollicitudin nisi, ut
+                sollicitudin lectus. Suspendisse facilisis vestibulum magna, vel placerat felis eleifend et. Sed et
+                lobortis tellus. </div>
+            <div id="menu-text"> </div>
+        </div>
+    </body>
+    <template id="header-temp">
+        <header>
+            <div id="logo"></div>
+            <hr>
+            <h1 id="rest-header"></h1>
+            <hr>
+            <h2 id="rest-header-two"></h2>
+        </header>
+    </template>
+    <template id="menubar-temp">
+        <nav>
+            <ul id="menubar-list">
+            </ul>
+        </nav>
+    </template>
+    <template id="menu-temp">
+        <h1 id="dish-title"></h1>
+        <hr>
+        <ul id="dish-item-list"></ul>
+        <hr>
+        <style>
+            hr {
+                width: 90%;
+                margin: auto;
+            }
+
+            ul {
+                list-style-type: none;
+            }
+
+            h1,
+            h2 {
+                text-transform: capitalize;
+            }
+        </style>
+    </template>
+    <template id="dish-item">
+        <li>
+            <img id="dish-image">
+            <h1 id="dish-description"></h1>
+            <h1 id="dish-price"></h1>
+        </li>
+        <style>
+            li {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin: 1rem;
+                font-family: fantasy;
+            }
+
+            img {
+                border-radius: 10%;
+                height: 100px;
+                width: 100px;
+            }
+
+            @media (max-width: 900px) {
+                li {
+                    flex-direction: column;
+                }
+            }
+        </style>
+    </template>
+    <script src="./main.js"></script>
+
+</html>
