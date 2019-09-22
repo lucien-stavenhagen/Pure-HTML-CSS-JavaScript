@@ -66,8 +66,8 @@ header {
 }
 #home-text img,
 #about-text img {
-  height: 200px;
-  width: 350px;
+  height: 300px;
+  width: 450px;
   float: left;
   margin-right: 1rem;
   margin-bottom: 1rem;
