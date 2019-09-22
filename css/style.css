@@ -56,13 +56,28 @@ header {
   width: 100%;
   padding: 1.2rem;
   border: var(--my-border);
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(255, 255, 255, 0.7);
   color: black;
   opacity: 0;
   transition: opacity, 0.75s;
   position: absolute;
   top: 0;
   left: 0;
+}
+#home-text img,
+#about-text img {
+  height: 200px;
+  width: 350px;
+  float: left;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+  border: var(--my-border);
+  border-radius: 2%;
+  box-shadow: 7px 7px 12px black;
+}
+#home-text h1,
+#about-text h1 {
+  text-transform: capitalize;
 }
 #text-content {
   width: var(--my-width);
