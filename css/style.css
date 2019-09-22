@@ -102,6 +102,10 @@ footer h2 {
   .menu-item {
     display: block;
   }
+  #home-text h1,
+  #about-text h1 {
+    text-align: center;
+  }
   footer {
     flex-direction: column;
   }
