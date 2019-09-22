@@ -57,16 +57,9 @@ header {
   padding: 1.2rem;
   border: var(--my-border);
   color: black;
-  opacity: 0;
-  transition: opacity, 0.75s;
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-image: linear-gradient(
-    to right,
-    rgba(199, 116, 39, 0.2),
-    rgba(24, 84, 139, 0.2)
-  );
+  display: none;
+  grid-column: 1 / span 1;
+  grid-row: 1;
 }
 #home-text img,
 #about-text img {
@@ -85,15 +78,13 @@ header {
 }
 #text-content {
   width: var(--my-width);
-  height: 825px;
   margin: auto;
-  padding: 1rem;
-  position: relative;
-  overflow: auto;
+  display: grid;
+  grid-template-columns: 1fr;
   background-color: rgba(255, 255, 255, 0.7);
 }
 footer {
-  margin-top: 1rem;
+  margin-top: 1px;
   padding: 1rem;
   display: flex;
   flex-wrap: nowrap;

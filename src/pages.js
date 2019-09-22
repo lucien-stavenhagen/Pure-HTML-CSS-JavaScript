@@ -13,9 +13,9 @@ const showPage = () => {
     for (let i = 0; i < pages.length; i++) {
       let a = pages[i].attributes;
       if (ifId(a, pageid)) {
-        pages[i].style.opacity = "1";
+        pages[i].style.display = "block";
       } else {
-        pages[i].style.opacity = "0";
+        pages[i].style.display = "none";
       }
     }
   };
