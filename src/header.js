@@ -1,6 +1,6 @@
 const restHeader = (title, description, logo) => {
-  const headerContent = document.querySelector("#header-content");
-  let t = document.querySelector("#header-temp");
+  const headerContent = document.getElementById("header-content");
+  let t = document.getElementById("header-temp");
   let clone = document.importNode(t.content, true);
   if (logo) {
     let logo = clone.getElementById("logo");

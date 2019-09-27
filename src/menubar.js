@@ -23,7 +23,7 @@ const menuBarFactory = () => {
   ];
   const restMenuBar = () => {
     const menubarContent = document.getElementById("menubar-content");
-    const t = document.querySelector("#menubar-temp");
+    const t = document.getElementById("menubar-temp");
     const menuclone = document.importNode(t.content, true);
     let ul = menuclone.getElementById("menubar-list");
     for (let i = 0; i < mitems.length; i++) {
